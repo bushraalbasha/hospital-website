@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        .contact-container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+        }
+
+        .contact-header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .navbar {
+            background-color: #343a40;
+        }
+
+        .navbar-brand {
+            color: #fff;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .navbar-nav .nav-item .nav-link {
+            color: #fff;
+            font-size: 1rem;
+            margin-right: 15px;
+        }
+
+        .navbar-nav .nav-item .nav-link:hover {
+            color: #ddd;
+        }
+
+        .navbar-toggler {
+            border-color: rgba(255, 255, 255, 0.1);
+        }
+
+        .navbar-toggler-icon {
+            color: #fff;
+        }
+
+        .footer-container {
+            background-color: #343a40;
+            color: white;
+            padding: 40px 0;
+        }
+
+        .footer-container a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .footer-container a:hover {
+            color: #cccccc;
+            text-decoration: underline;
+        }
+
+        .footer-container .social-icons a {
+            margin: 0 10px;
+            font-size: 1.5rem;
+        }
+
+        .footer-container hr {
+            border-top: 1px solid #cccccc;
+        }
+
+        .animate-fadein {
+            animation: fadein 2s ease-in-out;
+        }
+
+        @keyframes fadein {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section id="nav-bar">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark animate-fadein">
+            <div class="container">
+                <a class="navbar-brand" href="#"><img src="img/pngegg.png" alt="Logo" width="30" height="30"> Mashfa</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="mashfa.html">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="sections.html">SECTIONS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about_us">ABOUT US</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">CONTACT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="signin.html">SIGN IN</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+    <div class="contact-container">
+        <h2 class="contact-header">Contact Us</h2>
+        <form>
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter your email">
+            </div>
+            <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" class="form-control" id="subject" placeholder="Enter subject">
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea class="form-control" id="message" rows="5" placeholder="Enter your message"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+
+    <section id="contact">
+        <footer class="footer-container text-center animate-fadein">
+            <div class="container">
+                <p><i class="fas fa-map-marker-alt"></i> Kingdom of Saudi Arabia, Riyadh</p>
+                <p><i class="fas fa-phone-alt"></i> 0566669978</p>
+                <p><i class="fas fa-envelope"></i> <a href="mailto:mashfa@gmail.com"
+                        class="footer-email">mashfa@gmail.com</a></p>
+                <div class="social-icons">
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-linkedin-in"></a>
+                </div>
+                <hr>
+                <p class="m-0">&copy; 2020 Mashfa's Portfolio. All rights reserved.</p>
+            </div>
+        </footer>
+    </section>
+
+    <script>
+        function openHtmlFile2() {
+            window.location.href = 'test2.html';
+        }
+
+        function openHtmlFile() {
+            window.location.href = 'test.html';
+        }
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+</body>
+
+</html>

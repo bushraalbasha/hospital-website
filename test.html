@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Management</title>
+    <link rel="stylesheet" href="test.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Hospital Management System</h1>
+        <div>
+            <h1>Internal section</h1>
+        </div>
+
+
+        <!-- Hospital Section -->
+        <div class="section">
+            <h2>Hospitals</h2>
+            <input type="text" id="hospital-name" placeholder="Enter Hospital Name">
+            <button onclick="addHospital()">Add Hospital</button>
+            <table id="hospital-table">
+                <tr>
+                    <th>Hospital Name</th>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Sections Section -->
+        <div class="section">
+            <h2>Sections</h2>
+            <input type="text" id="section-name" placeholder="Enter Section Name">
+            <select id="hospital-select">
+                <option value="">Select Hospital</option>
+                <option value="City Hospital">City Hospital</option>
+                <option value="General Hospital">General Hospital</option>
+                <option value="Saint Mary Hospital">Saint Mary Hospital</option>
+                <option value="Metro Hospital">Metro Hospital</option>
+                <option value="Central Hospital">Central Hospital</option>
+            </select>
+            <button onclick="addSection()">Add Section</button>
+            <table id="section-table">
+                <tr>
+                    <th>Section Name</th>
+                    <th>Hospital</th>
+                </tr>
+            </table>
+        </div>
+
+
+        <!-- Nurses Section -->
+        <div class="section">
+            <h2>Nurses</h2>
+            <input type="text" id="nurse-name" placeholder="Enter Nurse Name">
+            <select id="section-select-nurse"></select>
+            <button onclick="addNurse()">Add Nurse</button>
+            <table id="nurse-table">
+                <tr>
+                    <th>Nurse Name</th>
+                    <th>Section</th>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Doctors Section -->
+        <div class="section">
+            <h2>Doctors</h2>
+            <input type="text" id="doctor-name" placeholder="Enter Doctor Name">
+            <select id="section-select-doctor"></select>
+            <button onclick="addDoctor()">Add Doctor</button>
+            <table id="doctor-table">
+                <tr>
+                    <th>Doctor Name</th>
+                    <th>Section</th>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Patients Section -->
+        <div class="section">
+            <h2>Patients</h2>
+            <input type="text" id="patient-name" placeholder="Enter Patient Name">
+            <select id="section-select-patient"></select>
+            <button onclick="addPatient()">Add Patient</button>
+            <table id="patient-table">
+                <tr>
+                    <th>Patient Name</th>
+                    <th>Section</th>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <script src="test.js"></script>
+</body>
+
+</html>

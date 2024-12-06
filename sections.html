@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sections Page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        .sections-container {
+            max-width: 900px;
+            margin: 50px auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .sections-header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        table {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        th,
+        td {
+            text-align: left;
+            padding: 8px;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        .navbar {
+            background-color: #343a40;
+        }
+
+        .navbar-brand {
+            color: #fff;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .navbar-nav .nav-item .nav-link {
+            color: #fff;
+            font-size: 1rem;
+            margin-right: 15px;
+        }
+
+        .navbar-nav .nav-item .nav-link:hover {
+            color: #ddd;
+        }
+
+        .navbar-toggler {
+            border-color: rgba(255, 255, 255, 0.1);
+        }
+
+        .navbar-toggler-icon {
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <section id="nav-bar">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark animate-fadein">
+            <div class="container">
+                <a class="navbar-brand" href="#"><img src="img/pngegg.png" alt="Logo" width="30" height="30"> Mashfa</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="mashfa.html">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="sections.html">SECTIONS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about_us">ABOUT US</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="coontact.html">CONTACT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="signin.html">SIGN IN</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+    <div class="sections-container">
+        <h2 class="sections-header">Sections</h2>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Section Name</th>
+                    <th>Hospital Name</th>
+                    <th>Patient Name</th>
+                    <th>Doctor Name</th>
+                    <th>Nurse Name</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Cardiology</td>
+                    <td>City Hospital</td>
+                    <td>John Doe</td>
+                    <td>Dr. Smith</td>
+                    <td>Nurse Jane</td>
+                </tr>
+                <tr>
+                    <td>Neurology</td>
+                    <td>General Hospital</td>
+                    <td>Jane Roe</td>
+                    <td>Dr. Adams</td>
+                    <td>Nurse Lisa</td>
+                </tr>
+                <tr>
+                    <td>Orthopedics</td>
+                    <td>Saint Mary Hospital</td>
+                    <td>Mark Twain</td>
+                    <td>Dr. Brown</td>
+                    <td>Nurse Helen</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./img/pngegg.png" type="">
+    <title>المشفى</title>
+</head>
+
+<body>
+    <section id="nav-bar">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container">
+                <a class="navbar-brand" href="#"><img src="img/pngegg.png" alt="img"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#hero">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="sections.html">SECTIONS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about_us">ABOUT US</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="coontact.html">CONTACT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="signin.html">SIGN IN</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    </section>
+
+    <!-----------------------------hero section------------------------------->
+
+
+    <section id="hero"
+        style="color: white; position: relative; background-image: url(img/img.png);background-size: cover ; background-position: center; height: 100vh;">
+
+        <div
+            style="position: absolute;top: 0;left: 0;right: 0;bottom: 0; background-color: rgb(0,0,0,0.6); z-index: 1;">
+        </div>
+        <div class="container p-5 text-center" style="position: relative; z-index: 2; height: 100%;">
+            <div class="row h-100 align-items-center">
+                <div class="col-md-6" id="section">
+                    <h1 class="display-3" style="animation: fadeinleft 1s;">Welcome to <span class="span">mashfa</span>
+                        hospital</h1>
+                    <button onclick="openHtmlFile2()" type="button" class="btn btn-secondary btn-lg ">External
+                        section</button>
+                    <button onclick="openHtmlFile()" type="button" class="btn btn-secondary btn-lg">Internal
+                        section</button>
+
+                </div>
+
+    </section>
+
+    <!-------------------------------about section------------------------------------>
+
+
+    <!-- <section id="about_us">
+        <div class="container py-5">
+            <h2 class="text-center mb-3">About US</h2>
+            <p class="text-center mb-5">
+                The hospital is a social company accredited by Monsha’at (the General Authority for Small and Medium
+                Enterprises) in cooperation with the Ministry of Human Resources and Social Development within the
+                framework of the National Transformation Program. <br> <b>As a commercial entity, the hospital has a
+                    clear social mission serving different segments of society.</b>
+            </p>
+        </div>
+    </section> -->
+
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>About Us</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <style>
+            #about_us {
+                padding: 50px 0;
+                background-color: #f9f9f9;
+            }
+
+            .about-us-header {
+                text-align: center;
+                margin-bottom: 30px;
+            }
+
+            .about-us-header h2 {
+                font-size: 2.5rem;
+                font-weight: 700;
+            }
+
+            .about-us-text {
+                font-size: 1.1rem;
+                line-height: 1.6;
+                color: #666;
+                text-align: center;
+                margin-bottom: 50px;
+            }
+
+            .about-us-mission {
+                font-weight: bold;
+                color: #333;
+            }
+
+            .about-us-img {
+                text-align: center;
+                margin-bottom: 30px;
+            }
+
+            .about-us-img img {
+                max-width: 100%;
+                height: auto;
+                border-radius: 10px;
+                box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <section id="about_us">
+            <div class="container">
+                <div class="about-us-header">
+                    <h2>About Us</h2>
+                </div>
+                <div class="about-us-img">
+                    <img src="img/hospitals.jpg" alt="About Us Image">
+                </div>
+                <div class="about-us-text">
+                    <p>
+                        The hospital is a social company accredited by Monsha’at (the General Authority for Small and
+                        Medium Enterprises) in cooperation with the Ministry of Human Resources and Social Development
+                        within the framework of the National Transformation Program.
+                    </p>
+                    <p class="about-us-mission">
+                        As a commercial entity, the hospital has a clear social mission serving different segments of
+                        society.
+                    </p>
+                    <p>
+                        Our mission is to provide high-quality healthcare services to the community, ensuring that
+                        everyone has access to the medical care they need.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    </body>
+
+    </html>
+
+
+
+
+    <!---------------footer--------------->
+    <!-- <section id="contact">
+        <footer class="bg-secondary text-center text-white py-3">
+
+            <p>Kingdom of Saudi Arabia</p>
+            <p>Riyadh</p>
+            <p>0566669978</p>
+            <a href="mashfa@gmail.com" class="footer-email">mashfa@gmail.com</a>
+            <hr>
+            <p class="m-0">&copy; 2020 mashfa's Portfolio. All rights reserved</p>
+
+
+        </footer>
+    </section> -->
+
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Footer</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <style>
+            .footer-container {
+                background-color: #343a40;
+                color: white;
+                padding: 40px 0;
+            }
+
+            .footer-container a {
+                color: white;
+                text-decoration: none;
+            }
+
+            .footer-container a:hover {
+                color: #cccccc;
+                text-decoration: underline;
+            }
+
+            .footer-container .social-icons a {
+                margin: 0 10px;
+                font-size: 1.5rem;
+            }
+
+            .footer-container hr {
+                border-top: 1px solid #cccccc;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <section id="contact">
+            <footer class="footer-container text-center">
+                <div class="container">
+                    <p><i class="fas fa-map-marker-alt"></i> Kingdom of Saudi Arabia, Riyadh</p>
+                    <p><i class="fas fa-phone-alt"></i> 0566669978</p>
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:mashfa@gmail.com"
+                            class="footer-email">mashfa@gmail.com</a></p>
+                    <div class="social-icons">
+                        <a href="#" class="fab fa-facebook-f"></a>
+                        <a href="#" class="fab fa-twitter"></a>
+                        <a href="#" class="fab fa-instagram"></a>
+                        <a href="#" class="fab fa-linkedin-in"></a>
+                    </div>
+                    <hr>
+                    <p class="m-0">&copy; 2020 Mashfa's Portfolio. All rights reserved.</p>
+                </div>
+            </footer>
+        </section>
+        <script>
+
+            class Hospital {
+
+            }
+            function openHtmlFile2() { window.location.href = 'test2.html'; }
+            function openHtmlFile() { window.location.href = 'test.html'; }
+
+        </script>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    </body>
+
+    </html>
+
+
+
+
+
+
+
+
+
+
+</body>
+<script src="./js/bootstrap.min.js"></script>
+
+
+</html>

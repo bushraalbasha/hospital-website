@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Management</title>
+    <link rel="stylesheet" href="test.css">
+</head>
+
+<body>
+
+    <!-- اضافة جديدة -->
+
+    <section id="nav-bar">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark animate-fadein">
+            <div class="container">
+                <a class="navbar-brand" href="#"><img src="img/pngegg.png" alt="Logo" width="30" height="30"> Mashfa</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="mashfa.html">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="sections.html">SECTIONS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about_us">ABOUT US</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">CONTACT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="signin.html">SIGN IN</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+    <div class="container">
+        <h1>Hospital Management System</h1>
+        <div>
+            <h1>External section</h1>
+        </div>
+
+        <!-- Hospital Section -->
+        <div class="section">
+            <h2>Hospitals</h2>
+            <input type="text" id="hospital-name" placeholder="Enter Hospital Name">
+            <button onclick="addHospital()">Add Hospital</button>
+            <table id="hospital-table">
+                <tr>
+                    <th>Hospital Name</th>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Sections Section -->
+        <div class="section">
+            <h2>Sections</h2>
+            <input type="text" id="section-name" placeholder="Enter Section Name">
+            <select id="hospital-select">
+                <option value="">Select Hospital</option>
+                <option value="City Hospital">City Hospital</option>
+                <option value="General Hospital">General Hospital</option>
+                <option value="Saint Mary Hospital">Saint Mary Hospital</option>
+                <option value="Metro Hospital">Metro Hospital</option>
+                <option value="Central Hospital">Central Hospital</option>
+            </select>
+            <button onclick="addSection()">Add Section</button>
+            <table id="section-table">
+                <tr>
+                    <th>Section Name</th>
+                    <th>Hospital</th>
+                </tr>
+            </table>
+        </div>
+
+
+        <!-- Nurses Section -->
+        <div class="section">
+            <h2>Nurses</h2>
+            <input type="text" id="nurse-name" placeholder="Enter Nurse Name">
+            <select id="section-select-nurse"></select>
+            <button onclick="addNurse()">Add Nurse</button>
+            <table id="nurse-table">
+                <tr>
+                    <th>Nurse Name</th>
+                    <th>Section</th>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Doctors Section -->
+        <div class="section">
+            <h2>Doctors</h2>
+            <input type="text" id="doctor-name" placeholder="Enter Doctor Name">
+            <select id="section-select-doctor"></select>
+            <button onclick="addDoctor()">Add Doctor</button>
+            <table id="doctor-table">
+                <tr>
+                    <th>Doctor Name</th>
+                    <th>Section</th>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Patients Section -->
+        <div class="section">
+            <h2>Patients</h2>
+            <input type="text" id="patient-name" placeholder="Enter Patient Name">
+            <select id="section-select-patient"></select>
+            <button onclick="addPatient()">Add Patient</button>
+            <table id="patient-table">
+                <tr>
+                    <th>Patient Name</th>
+                    <th>Section</th>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <script src="test.js"></script>
+</body>
+
+</html>
